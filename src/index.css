@@ -1,0 +1,163 @@
+ @import "tailwindcss";
+ @plugin "daisyui";
+
+
+
+ @import "tailwindcss";
+@plugin "daisyui";
+@import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
+body{
+    background: #1c1c1c;
+    
+}
+
+
+/* Make active bullet red */
+.swiper-pagination-bullet-active {
+  background-color: red !important;
+}
+
+/* Optional: make all bullets slightly visible (gray) */
+.swiper-pagination-bullet {
+  background-color: rgb(230, 18, 18);
+}
+ 
+
+
+
+ 
+
+.modal-img {
+  grid-area: images;
+}
+
+.modal-name {
+  grid-area: name;
+}
+/* 
+.modal-button1 {
+  grid-area: button1;
+} */
+
+.btn-container {
+  grid-area: button-container; /* for large devices */
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.modal-details {
+  grid-area: details;
+}
+
+/* .modal-button2 {
+  grid-area: button2;
+} */
+
+.modal-dis {
+  grid-area: description;
+}
+
+ 
+
+/* Large devices (≥ 1024px) */
+@media (min-width: 1024px) {
+  .modal-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+    grid-template-areas:
+      "images images name"
+      "images images btn-container"
+      "images images details"
+      "images images details"
+      
+      "description description description";
+    gap: 25px;
+  }
+
+  .btn-container {
+    grid-area: btn-container;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+ /* Small devices (sm < 768px) */
+@media (max-width: 767px) {
+  .modal-container {
+    display: grid;
+    grid-template-columns: 1fr; /* single column */
+    grid-template-areas:
+      "images"
+      "name"
+      "btn-container"
+      "details"
+      "description";
+    gap: 10px;
+  }
+
+  .modal-img {
+    grid-area: images;
+  }
+
+  .modal-name {
+    grid-area: name;
+  }
+
+  .btn-container {
+    grid-area: btn-container;
+    display: flex;
+    flex-direction: column; /* stack buttons vertically */
+    gap: 8px;
+  }
+
+  .modal-details {
+    grid-area: details;
+  }
+
+  .modal-dis {
+    grid-area: description;
+  }
+}
+
+/* Medium devices (md ≥ 768px and <1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .modal-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two columns */
+    grid-template-areas:
+      "images images"
+      "name name"
+      "btn-container btn-container"
+      "details details"
+      "description description";
+    gap: 12px;
+  }
+
+  .modal-img {
+    grid-area: images;
+  }
+
+  .modal-name {
+    grid-area: name;
+  }
+
+  .btn-container {
+    grid-area: btn-container;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* horizontal buttons if space allows */
+  }
+
+  .modal-details {
+    grid-area: details;
+  }
+
+  .modal-dis {
+    grid-area: description;
+  }
+}
+
+
+
+ 

@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Amina Rahman",
+    "profile_picture": "https://i.pravatar.cc/150?img=65",
+    "comment": "Love the dark theme! Navigation feels smooth and sleek.",
+    "rating": 5
+  },
+  {
+    "name": "Rafiq Hasan",
+    "profile_picture": "https://i.pravatar.cc/150?img=48",
+    "comment": "Dark mode is perfect for night browsing. Pages load fast.",
+    "rating": 4
+  },
+  {
+    "name": "Sadia Khan",
+    "profile_picture": "https://i.pravatar.cc/150?img=77",
+    "comment": "Cool design. Dark background really makes the content pop.",
+    "rating": 5
+  },
+  {
+    "name": "Md. Imran",
+    "profile_picture": "https://i.pravatar.cc/150?img=29",
+    "comment": "I like the theme, but a few buttons are hard to see in dark mode.",
+    "rating": 3
+  },
+  {
+    "name": "Tania Sultana",
+    "profile_picture": "https://i.pravatar.cc/150?img=84",
+    "comment": "Slick dark UI! Really enjoyable experience at night.",
+    "rating": 5
+  },
+  {
+    "name": "Arif Chowdhury",
+    "profile_picture": "https://i.pravatar.cc/150?img=90",
+    "comment": "Dark mode is good but some text could be brighter for readability.",
+    "rating": 3
+  },
+  {
+    "name": "Nusrat Jahan",
+    "profile_picture": "https://i.pravatar.cc/150?img=10",
+    "comment": "Love the aesthetic! Dark mode feels modern and clean.",
+    "rating": 5
+  },
+  {
+    "name": "Shafiqur Rahman",
+    "profile_picture": "https://i.pravatar.cc/150?img=32",
+    "comment": "Navigation is okay but highlights could be stronger in dark mode.",
+    "rating": 3
+  },
+  {
+    "name": "Maya Akter",
+    "profile_picture": "https://i.pravatar.cc/150?img=50",
+    "comment": "Dark mode is smooth and stylish. I can browse all night!",
+    "rating": 5
+  },
+  {
+    "name": "Kamal Hossain",
+    "profile_picture": "https://i.pravatar.cc/150?img=16",
+    "comment": "Nice dark theme but search results are slightly hard to read.",
+    "rating": 4
+  },
+  {
+    "name": "Fariha Noor",
+    "profile_picture": "https://i.pravatar.cc/150?img=5",
+    "comment": "Dark UI is great. The content stands out beautifully.",
+    "rating": 5
+  },
+  {
+    "name": "Jahidul Islam",
+    "profile_picture": "https://i.pravatar.cc/150?img=24",
+    "comment": "Love dark mode. Some buttons could glow more for better visibility.",
+    "rating": 4
+  },
+  {
+    "name": "Rumana Begum",
+    "profile_picture": "https://i.pravatar.cc/150?img=19",
+    "comment": "Beautiful dark theme. Very comfortable on eyes at night.",
+    "rating": 5
+  },
+  {
+    "name": "Zakir Ahmed",
+    "profile_picture": "https://i.pravatar.cc/150?img=7",
+    "comment": "Dark mode works well, but the footer text is a bit too dim.",
+    "rating": 3
+  },
+  {
+    "name": "Laila Ferdous",
+    "profile_picture": "https://i.pravatar.cc/150?img=12",
+    "comment": "Modern and stylish dark UI. I’m impressed!",
+    "rating": 5
+  }
+]
