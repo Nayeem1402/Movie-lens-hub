@@ -5,7 +5,7 @@ import React, { Suspense } from "react";
 export default function Home() {
   const movieDatas = fetch("./../../public/movie.json")
   .then(res => res.json());
-console.log(movieDatas);
+
 
   return (
     <div>

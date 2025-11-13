@@ -1,0 +1,162 @@
+ [
+  {
+    "id": 1,
+    "name": "Alpha",
+    "actor": "Vicky Kaushal",
+    "actress": "Alia Bhatt",
+    "release_date": "25 Dec 2025",
+    "category": "Action/Spy"
+  },
+  {
+    "id": 2,
+    "name": "Dhurandhar",
+    "actor": "Ranveer Singh",
+    "actress": "Sara Arjun",
+    "release_date": "05 Dec 2025",
+    "category": "Action/Thriller"
+  },
+  {
+    "id": 3,
+    "name": "Baaghi 4",
+    "actor": "Tiger Shroff",
+    "actress": "Harnaaz Sandhu",
+    "release_date": "05 Sep 2025",
+    "category": "Action"
+  },
+  {
+    "id": 4,
+    "name": "In Your Dreams",
+    "actor": "Simu Liu",
+    "actress": "Hailey Magpali",
+    "release_date": "14 Nov 2025",
+    "category": "Adventure/Animation"
+  },
+  {
+    "id": 5,
+    "name": "Zootopia 2",
+    "actor": "Jason Bateman",
+    "actress": "Ginnifer Goodwin",
+    "release_date": "26 Nov 2025",
+    "category": "Animation/Adventure"
+  },
+  {
+    "id": 6,
+    "name": "Avatar: Fire and Ash",
+    "actor": "Sam Worthington",
+    "actress": "Zoe Saldaña",
+    "release_date": "19 Dec 2025",
+    "category": "Sci‑Fi/Adventure"
+  },
+  {
+    "id": 7,
+    "name": "The Odyssey",
+    "actor": "Tom Holland",
+    "actress": "Zendaya",
+    "release_date": "17 Jul 2026",
+    "category": "Action/Adventure"
+  },
+  {
+    "id": 8,
+    "name": "Tu Meri Main Tera Main Tera Tu Meri",
+    "actor": "Kartik Aaryan",
+    "actress": "Ananya Panday",
+    "release_date": "25 Dec 2025",
+    "category": "Romantic/Comedy"
+  },
+  {
+    "id": 9,
+    "name": "Bombay",
+    "actor": "Gavie Chahal",
+    "actress": "Deepshikha Nagpal",
+    "release_date": "30 May 2025",
+    "category": "Action/Crime"
+  },
+  {
+    "id": 10,
+    "name": "The Super Mario Galaxy Movie",
+    "actor": "Chris Pratt",
+    "actress": "Anya Taylor‑Joy",
+    "release_date": "03 Apr 2026",
+    "category": "Animation/Adventure"
+  },
+  {
+    "id": 11,
+    "name": "The Devil Wears Prada 2",
+    "actor": "Meryl Streep",
+    "actress": "Anne Hathaway",
+    "release_date": "01 May 2026",
+    "category": "Drama/Sequel"
+  },
+  {
+    "id": 12,
+    "name": "Spider‑Man: Brand New Day",
+    "actor": "Tom Holland",
+    "actress": "Sadie Sink",
+    "release_date": "31 Jul 2026",
+    "category": "Action/Superhero"
+  },
+  {
+    "id": 13,
+    "name": "Toy Story 5",
+    "actor": "Tom Hanks",
+    "actress": "Annie Potts",
+    "release_date": "19 Jun 2026",
+    "category": "Family/Animation"
+  },
+  {
+    "id": 14,
+    "name": "Scary Movie 6",
+    "actor": "TBA",
+    "actress": "TBA",
+    "release_date": "12 Jun 2026",
+    "category": "Comedy/Horror"
+  },
+  {
+    "id": 15,
+    "name": "How To Rob A Bank",
+    "actor": "TBA",
+    "actress": "TBA",
+    "release_date": "04 Sep 2026",
+    "category": "Comedy"
+  },
+  {
+    "id": 16,
+    "name": "Narnia: The Magician's Nephew",
+    "actor": "TBA",
+    "actress": "TBA",
+    "release_date": "26 Nov 2026",
+    "category": "Fantasy"
+  },
+  {
+    "id": 17,
+    "name": "Werwulf",
+    "actor": "TBA",
+    "actress": "TBA",
+    "release_date": "25 Dec 2026",
+    "category": "Horror"
+  },
+  {
+    "id": 18,
+    "name": "Eternity",
+    "actor": "Miles Teller",
+    "actress": "Elizabeth Olsen",
+    "release_date": "TBD Nov 2025",
+    "category": "Rom‑Com"
+  },
+  {
+    "id": 19,
+    "name": "Oh. What. Fun.",
+    "actor": "Michelle Pfeiffer",
+    "actress": "Felicity Jones",
+    "release_date": "03 Dec 2025",
+    "category": "Comedy"
+  },
+  {
+    "id": 20,
+    "name": "Mercy",
+    "actor": "Chris Pratt",
+    "actress": "Rebecca Ferguson",
+    "release_date": "23 Jan 2026",
+    "category": "Sci‑Fi/Thriller"
+  }
+]
