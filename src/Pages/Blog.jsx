@@ -1,4 +1,4 @@
-import Blank from "../Components/Blank";
+import Faq from "../Components/Faq";
 import Suscribtion from "../Components/Suscribtion";
 import Upcomming from "../Components/Upcomming";
 import { Suspense } from 'react';
@@ -12,7 +12,7 @@ export default function Blog() {
     <Suspense fallback={<h2 className="text-center mt-10 text-3xl font-semibold">Loading...</h2>}>
       <Upcomming comming={comming}></Upcomming>
     </Suspense>
-    <Blank></Blank>
+    <Faq></Faq>
   </>
   )
 }
