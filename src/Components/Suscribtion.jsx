@@ -22,7 +22,7 @@ export default function Suscribtion() {
                 >
 
                     {/* card 1  */}
-                    <div className=" shadow-lg rounded-xl p-8 flex flex-col items-center justify-center ">
+                    <div className=" transition-all transform hover:-translate-y-2 hover:border-pink-500 shadow-lg rounded-xl p-8 flex flex-col items-center justify-center ">
                         <h1 className="text-4xl font-bold">10.00$  </h1>
                         <h1 className="text-xl text-gray-400 mt-3"> For 1 Month</h1>
                         <button className="bg-red-600 px-5 py-2 rounded-xl mt-10 hover:text-red-600 hover:bg-white">Subscribe</button>
@@ -41,7 +41,7 @@ export default function Suscribtion() {
 
                     className="w-[250px] mx-auto mt-10 p-8"
                 >
-                    <div className=" shadow-lg rounded-xl p-8 flex flex-col items-center justify-center ">
+                    <div className=" transition-all transform hover:-translate-y-2 hover:border-pink-500 shadow-lg rounded-xl p-8 flex flex-col items-center justify-center ">
                         <h1 className="text-4xl font-bold">20.00$  </h1>
                         <h1 className="text-xl text-gray-400 mt-3"> For 3 month</h1>
                         <div>
@@ -59,12 +59,13 @@ export default function Suscribtion() {
                     chaos={0.5}
                     thickness={2}
                     style={{ borderRadius: 16 }}
-
+                    hoverable={true}
+                 
                     className="w-[250px] mx-auto mt-10 p-8"
                 >
 
 
-                    <div className=" shadow-lg rounded-xl p-8 flex flex-col items-center justify-center ">
+                    <div className=" transition-all transform hover:-translate-y-2 hover:border-pink-500  shadow-lg rounded-xl p-8 flex flex-col items-center justify-center ">
                         <h1 className="text-4xl font-bold">50.00$  </h1>
                         <h1 className="text-xl text-gray-400 mt-3"> For 1 Year</h1>
                         <button className="bg-red-600 px-5 py-2 rounded-xl mt-10 hover:text-red-600 hover:bg-white">Subscribe</button>
