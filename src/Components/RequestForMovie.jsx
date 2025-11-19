@@ -27,7 +27,7 @@ export default function RequestForMovie() {
                 Request For Movie
             </h1>
 
-            <div className="w-full mx-auto flex flex-col gap-3">
+            <div className="w-full mx-auto  flex flex-col gap-3">
                 <h2>
                     Movie name :
                     <br />
@@ -37,7 +37,7 @@ export default function RequestForMovie() {
                         placeholder="Enter the Movie name"
                         value={movieName}
                         onChange={(e) => setMovieName(e.target.value)}
-                        className="input w-full"
+                        className="input w-full border rounded-xl text-white placeholder-gray-400"
                     />
                 </h2>
 
@@ -50,7 +50,7 @@ export default function RequestForMovie() {
                         placeholder="Enter the Release year"
                         value={releaseYear}
                         onChange={(e) => setReleaseYear(e.target.value)}
-                        className="input w-full "
+                        className="input w-full  border rounded-xl text-white placeholder-gray-400"
                     />
                 </h2>
 
@@ -63,7 +63,7 @@ export default function RequestForMovie() {
                         placeholder="Enter the Director name"
                         value={directorName}
                         onChange={(e) => setDirectorName(e.target.value)}
-                        className="input w-full"
+                        className="input w-full border rounded-xl text-white placeholder-gray-400"
                     />
                 </h2>
 
@@ -75,15 +75,15 @@ export default function RequestForMovie() {
                         placeholder="Enter the Language"
                         value={language}
                         onChange={(e) => setLanguage(e.target.value)}
-                        className="input w-full"
+                        className="input w-full border rounded-xl text-white placeholder-gray-400"
                     />
                 </h2>
 
-                {/* Button: disabled until all required fields filled */}
+                {/* Button: disabled   */}
                 <button
                     onClick={handleSubmit}
                     disabled={!allFilled}
-                    className={`btn text-lg mt-3 w-full
+                    className={`btn text-lg mt-3 w-full rounded-xl
                         ${
                             allFilled
                                 ? "bg-red-600 text-white hover:bg-white hover:text-red-600 cursor-pointer"

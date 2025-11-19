@@ -33,7 +33,7 @@ export default function Navbar({ setSelectedCategory, setSearchQuery }) {
   const hoverEffect =
     "relative inline-block transition duration-300 transform hover:scale-105 hover:text-red-600 " +
     "after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] " +
-    "after:w-0 after:bg-red-600 after:transition-all after:duration-300 hover:after:w-full";
+    "after:w-0 after:bg-red-600 after:transition-all after:duration-300 hover:after:w-full text-white";
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
@@ -72,12 +72,12 @@ export default function Navbar({ setSelectedCategory, setSearchQuery }) {
 
             <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow text-lg">
               <li>
-                <Link to="/" onClick={() => handleCategoryClick("All")} className={hoverEffect}>Home</Link>
+                <Link to="/" onClick={() => handleCategoryClick("All")} className={` ${hoverEffect}`}>Home</Link>
               </li>
               <li ref={dropdownRefMobile}>
                 <button
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                  className="flex justify-between items-center w-full hover:text-red-600"
+                  className={`${hoverEffect} block flex justify-between items-center w-full hover:text-red-600 text-white`}
                 >
                   Categories
                   <svg
@@ -123,12 +123,12 @@ export default function Navbar({ setSelectedCategory, setSearchQuery }) {
             <li>
               <details open={dropdownOpen}>
                 <summary
-                  className="hover:text-red-600 cursor-pointer"
+                  className="hover:text-red-600 cursor-pointer text-white"
                   onClick={(e) => { e.preventDefault(); setDropdownOpen(!dropdownOpen); }}
                 >
                   Categories
                 </summary>
-                <ul className="p-2 bg-base-100 rounded-box">
+                <ul className="p-2 bg-[#1C1C1C] rounded-box">
                   {categories.map(cat => (
                     <li key={cat}>
                       <a onClick={() => handleCategoryClick(cat)} className={hoverEffect}>{cat}</a>

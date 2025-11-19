@@ -2,7 +2,8 @@ import { Outlet } from 'react-router';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import React, { useState, useEffect } from 'react';
-
+import ScrollToTop from './Components/ScrollToTop';
+ 
 export default function Root() {
   const [movies, setMovies] = useState([]);
   const [filteredMovies, setFilteredMovies] = useState([]);
@@ -41,6 +42,7 @@ export default function Root() {
 
   return (
     <div>
+     <ScrollToTop />
       <Navbar
         setSearchQuery={setSearchQuery}
         setSelectedCategory={setSelectedCategory}
