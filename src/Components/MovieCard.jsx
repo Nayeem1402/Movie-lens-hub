@@ -4,20 +4,24 @@ import hover3d from "daisyui/components/hover3d";
 
 export default function MovieCard({ movieDatas }) {
   const [selectedMovie, setSelectedMovie] = React.useState(null);
+  const [showAll, setShowAll] = React.useState(false);
 
   const handleClick = (movie) => {
     setSelectedMovie(movie);
     document.getElementById("movie_modal").checked = true;
   };
 
+  // Show only first 16 unless "show all" clicked
+  const moviesToShow = showAll ? movieDatas : movieDatas?.slice(0, 16);
+
   return (
     <>
-      {movieDatas && movieDatas.length > 0 ? (
-        <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-center place-items-center py-6 w-10/12 mx-auto mt-0 ">
-          {movieDatas.map((movie) => (
+      {moviesToShow && moviesToShow.length > 0 ? (
+        <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-center place-items-center py-6 w-10/12 mx-auto mt-0 ">
+          {moviesToShow.map((movie) => (
             <div
               key={movie.id}
-              className="w-[300px] relative h-[380px] justify-center p-2 my-8 cursor-pointer  hover-3d text-white  hover:text-red-600   "
+              className="w-[300px] relative h-[380px] justify-center p-2 my-8 cursor-pointer hover-3d text-white hover:text-red-600"
               onClick={() => handleClick(movie)}
             >
               <div
@@ -27,7 +31,7 @@ export default function MovieCard({ movieDatas }) {
               >
                 <div className="h-[300px] w-full overflow-hidden rounded-xl shadow-md">
                   <img
-                    className="h-full w-full object-cover rounded-xl "
+                    className="h-full w-full object-cover rounded-xl"
                     src={movie.vertical_poster}
                     alt={movie.movie_name}
                   />
@@ -44,7 +48,6 @@ export default function MovieCard({ movieDatas }) {
                   </div>
                 </div>
               </div>
-
             </div>
           ))}
         </div>
@@ -54,11 +57,21 @@ export default function MovieCard({ movieDatas }) {
         </h2>
       )}
 
+      {/* Show All Button */}
+      <div className="flex justify-center mb-6">
+        {!showAll && movieDatas?.length > 16 && (
+          <button
+            className="btn bg-red-600 text-white px-6 rounded-xl hover:bg-white hover:text-red-600 border-none"
+            onClick={() => setShowAll(true)}
+          >
+            Show All
+          </button>
+        )}
+      </div>
 
-      {/* modal  */}
-
+      {/* modal */}
       <input type="checkbox" id="movie_modal" className="modal-toggle" />
-      <div className="modal overflow-y-auto my-auto ">
+      <div className="modal overflow-y-auto my-auto">
         <div className="modal-box bg-[#1C1C1C] text-white relative w-11/12 md:w-10/12 lg:w-7/12 max-w-[90vw] max-h-[70vh] flex flex-col">
           <label
             htmlFor="movie_modal"
@@ -66,6 +79,7 @@ export default function MovieCard({ movieDatas }) {
           >
             Close
           </label>
+
           <div className="overflow-y-auto pr-2 modal-container">
             {selectedMovie ? (
               <>
@@ -76,21 +90,25 @@ export default function MovieCard({ movieDatas }) {
                     alt={selectedMovie.movie_name}
                   />
                 </div>
+
                 <h3 className="text-2xl lg:mt-10 font-bold text-start modal-name">
                   {selectedMovie.movie_name}
                 </h3>
+
                 <div className="btn-container flex flex-wrap gap-3 my-4">
                   <button className="btn modal-button1 border-none bg-white text-red-600 rounded-3xl font-bold w-[150px] hover:bg-red-600 hover:text-white">
                     <a target="blank" href={selectedMovie.movie_link}>
                       Watch Movie
                     </a>
                   </button>
+
                   <button className="btn modal-button2 border-none bg-white text-red-600 rounded-3xl w-[150px] font-bold hover:bg-red-600 hover:text-white">
                     <a target="blank" href={selectedMovie.trailer_link}>
                       Watch Trailer
                     </a>
                   </button>
                 </div>
+
                 <div className="modal-details space-y-1">
                   <p className="text-gray-400">
                     <span className="font-semibold text-white">Category:</span>{" "}
@@ -113,6 +131,7 @@ export default function MovieCard({ movieDatas }) {
                     {selectedMovie.actress_name}
                   </p>
                 </div>
+
                 <p className="py-2 modal-dis text-gray-400">
                   <span className="font-semibold text-white">Description:</span>
                   <br />
