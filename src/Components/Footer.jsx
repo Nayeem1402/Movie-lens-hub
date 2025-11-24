@@ -1,8 +1,16 @@
+
+import { Link } from 'react-router';
 export default function Footer({ setSelectedCategory }) {
   const categories = [
     "Action", "Romantic", "Thriller", "Comedy", "Drama", "Horror",
     "Sci-Fi", "Adventure", "Crime", "Biography", "Family", "Animation"
   ];
+
+  const hoverEffect =
+    "relative inline-block transition duration-300 transform hover:scale-105 hover:text-red-600 " +
+    "after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] " +
+    "after:w-0 after:bg-red-600 after:transition-all after:duration-300 hover:after:w-full text-white";
+
 
   return (
     <footer className="bg-black/40 backdrop-blur-md text-white mt-20 pt-10 pb-6 px-[10%] border-t border-white/10">
@@ -15,13 +23,14 @@ export default function Footer({ setSelectedCategory }) {
         <div>
           <h3 className="text-lg font-bold mb-2">Quick Links</h3>
           <ul className="space-y-1 text-gray-300">
-            {["Home", "TV Show", "Blog", "Request Movie"].map((item, idx) => (
-              <li key={idx}>
-                <a className="hover:text-[#E50914] transition duration-300 cursor-pointer" onClick={() => setSelectedCategory(item === "Home" ? "All" : item)}>
-                  {item}
-                </a>
-              </li>
-            ))}
+            <li>
+              <Link to="/" onClick={() => handleCategoryClick("All")} className={` ${hoverEffect}`}>Home</Link>
+            </li>
+            <li>
+              <Link to="/tv-show" onClick={() => handleCategoryClick("TV Show")} className={hoverEffect}>TV Show</Link>
+            </li><li>
+              <Link className={hoverEffect} to="/blog">Blog</Link>
+            </li>
           </ul>
         </div>
 
@@ -30,7 +39,7 @@ export default function Footer({ setSelectedCategory }) {
           <ul className="space-y-1 text-gray-300">
             {categories.map((cat, idx) => (
               <li key={idx}>
-                <a className="hover:text-[#E50914] transition duration-300 cursor-pointer" onClick={() => setSelectedCategory(cat)}>
+                <a className={`  transition duration-300 cursor-pointer ${hoverEffect}`} onClick={() => setSelectedCategory(cat)}>
                   {cat}
                 </a>
               </li>
