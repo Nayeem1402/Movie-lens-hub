@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router";
-
+import logo from './../assets/Images/logo.jpg';
+import Suscribtion from '../Pages/Suscribtions';
+import Blog from './../Pages/Blog';
 export default function Navbar({ setSelectedCategory, setSearchQuery }) {
   const [scrolled, setScrolled] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -103,7 +105,7 @@ export default function Navbar({ setSelectedCategory, setSearchQuery }) {
                 )}
               </li>
               <li>
-                <Link to="/tv-show" onClick={() => handleCategoryClick("TV Show")} className={hoverEffect}>TV Show</Link>
+                <Link to="/blog" onClick={() => handleCategoryClick("blog")} className={hoverEffect}>Blog</Link>
               </li>
               <li>
                 <Link className={hoverEffect} to="/blog">Blog</Link>
@@ -111,9 +113,7 @@ export default function Navbar({ setSelectedCategory, setSearchQuery }) {
             </ul>
           </div>
 
-          <a onClick={() => handleCategoryClick("All")} className="font-extrabold text-[#E50914] text-3xl hidden md:block cursor-pointer">
-            Movie Lens Hub
-          </a>
+          <img src={logo} alt="" className="h-15 w-15  rounded-full"/>
         </div>
 
         {/* Navbar Center */}
@@ -139,8 +139,11 @@ export default function Navbar({ setSelectedCategory, setSearchQuery }) {
                 </ul>
               </details>
             </li>
-            <li>
+            {/* <li>
               <Link to="/tv-show" onClick={() => handleCategoryClick("TV Show")} className={hoverEffect}>TV Show</Link>
+            </li> */}
+            <li>
+              <Link className={hoverEffect} to="/suscribtion">Suscribtion</Link>
             </li>
             <li>
               <Link className={hoverEffect} to="/blog">Blog</Link>

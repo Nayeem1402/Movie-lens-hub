@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "headline": "Marvel Announces New Superhero Film Set for 2026 Release",
+    "date": "2025-02-10",
+    "news": "Marvel Studios confirms a new superhero film coming in 2026. The movie will introduce a major new character to the MCU and is expected to be a blockbuster hit."
+  },
+  {
+    "id": 2,
+    "headline": "Legendary Director Returns With a New Neo-Noir Thriller",
+    "date": "2025-02-09",
+    "news": "Award-winning director Jordan Fields will direct a new neo-noir thriller exploring crime, corruption, and complex characters."
+  },
+  {
+    "id": 3,
+    "headline": "Disney Confirms Live-Action Remake of Classic Animated Favorite",
+    "date": "2025-02-08",
+    "news": "Disney announces a live-action version of its beloved animated film, promising modern effects while keeping the original story intact."
+  },
+  {
+    "id": 4,
+    "headline": "Netflix Breaks Records With Its Latest Sci-Fi Series Premiere",
+    "date": "2025-02-07",
+    "news": "Netflix reports record-breaking viewership for its latest sci-fi series, reaching over 200 million hours watched in the first 48 hours."
+  },
+  {
+    "id": 5,
+    "headline": "Oscar Nomination List Revealed With Surprising Contenders",
+    "date": "2025-02-06",
+    "news": "This year’s Oscar nominations include several unexpected films, sparking discussions and predictions among critics worldwide."
+  },
+  {
+    "id": 6,
+    "headline": "New Action Movie Becomes Fastest to Hit 500M Worldwide",
+    "date": "2025-02-05",
+    "news": "The latest action blockbuster has become the fastest movie to reach $500 million globally, smashing previous box office records."
+  },
+  {
+    "id": 7,
+    "headline": "Horror Reboot Receives Massive Praise From Early Reviewers",
+    "date": "2025-02-04",
+    "news": "Critics praise the reboot of a classic horror franchise, highlighting its suspenseful storytelling and modernized effects."
+  },
+  {
+    "id": 8,
+    "headline": "Fan-Favorite Actor Confirmed for Upcoming Space Adventure Film",
+    "date": "2025-02-03",
+    "news": "Actor Chris Harlow is set to star in an upcoming space adventure film, bringing excitement to fans of the sci-fi genre."
+  },
+  {
+    "id": 9,
+    "headline": "Major Studio Announces Cinematic Universe Expansion",
+    "date": "2025-02-02",
+    "news": "A major studio confirms plans to expand its cinematic universe, introducing new characters and interconnected storylines."
+  },
+  {
+    "id": 10,
+    "headline": "Classic Movie Celebrates 20th Anniversary With 4K Re-Release",
+    "date": "2025-02-01",
+    "news": "A classic film celebrates its 20th anniversary with a remastered 4K re-release, attracting both nostalgic fans and new viewers."
+  },
+  {
+    "id": 11,
+    "headline": "New Fantasy Epic Becomes Most Anticipated Film of the Year",
+    "date": "2025-01-30",
+    "news": "A fantasy epic featuring mythical creatures and an intricate plot is generating huge anticipation for its worldwide release."
+  },
+  {
+    "id": 12,
+    "headline": "Documentary on Famous Novelist Wins International Award",
+    "date": "2025-01-29",
+    "news": "A documentary chronicling the life and works of a renowned novelist has won top honors at an international film festival."
+  },
+  {
+    "id": 13,
+    "headline": "Upcoming Detective Film Promises Mind-Bending Plot Twists",
+    "date": "2025-01-28",
+    "news": "A detective thriller set to release soon promises unexpected twists and turns that will challenge the audience’s perception."
+  },
+  {
+    "id": 14,
+    "headline": "Popular Franchise Announces Final Installment Release Date",
+    "date": "2025-01-27",
+    "news": "Producers of a blockbuster franchise reveal the release date of the series’ final installment, ending a decade-long saga."
+  },
+  {
+    "id": 15,
+    "headline": "Critics Praise Breakout Performance in Independent Drama",
+    "date": "2025-01-26",
+    "news": "A newcomer delivers a powerful performance in an independent drama, earning praise from critics and audiences alike."
+  } 
+]

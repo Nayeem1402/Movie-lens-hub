@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router";
 import Root from "../Root";
 import Home from "../Pages/Home";
-import TvShow from "../Pages/TvShow";
+import Suscribtions from "../Pages/Suscribtions";
 import Blog from "../Pages/Blog";
-
+ 
 
 const router = createBrowserRouter([
     {
@@ -15,12 +15,12 @@ const router = createBrowserRouter([
                 element:<Home></Home>
             },
             {
-                path: "/tv-show",
-                element: <TvShow></TvShow>
-            },
-            {
                 path: "/blog",
                 element: <Blog></Blog>
+            },
+            {
+                path: "/suscribtion",
+                element: <Suscribtions></Suscribtions> 
             }
         ]
     }
